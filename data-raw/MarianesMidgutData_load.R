@@ -22,7 +22,6 @@ readCounts_a1 <- filter(readCounts_a1, str_detect(V1, "FBgn"))
 
 # Get income data for the log-scaling practice section
 i <- read_csv("data-raw/s.ipums.la.99", col_names = FALSE)
-income <- as.numeric(i$X8)
 
 # Make object for the midgut meta data
 midgut_tsv <- read.table("data-raw/midgut.tsv", header=TRUE)
@@ -59,7 +58,7 @@ usethis::use_data(readCounts, overwrite = TRUE)
 usethis::use_data(a, overwrite = TRUE)
 usethis::use_data(readCounts_Cu, overwrite = TRUE)
 usethis::use_data(readCounts_a1, overwrite = TRUE)
-usethis::use_data(income, overwrite = TRUE)
+usethis::use_data(i, overwrite = TRUE)
 usethis::use_data(midgut_tsv, overwrite = TRUE)
 usethis::use_data(midgut, overwrite = TRUE)
 usethis::use_data(SRR891601, overwrite = TRUE)

@@ -117,5 +117,391 @@
 #' @source \url{http://kdd.ics.uci.edu/databases/ipums/ipums.html}
 "i"
 
-# It seems I could do the above for each of the data sets, but I'm not sure if that's the best way to do it.
-# Would there be a way to do it for all of them at once?
+#' Sample meta data for the midgut data
+#'
+#'  Sample meta data for the midgut data
+#'
+#' @format A data frame  with 30 rows and 3 variables:
+#' \describe{
+#'   \item{sample}{Sample name}
+#'   \item{filename}{File name}
+#'   \item{condition}{Condition} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"midgut_tsv"
+
+#' Expression data for the midgut data
+#'
+#'  DESeq2 object for the midgut data
+#'
+#' @format A DESeq2 object containing results of differential expression analysis:
+#' \describe{
+#'   \item{assays}{List of matrices with raw and normalized count data}
+#'   \item{rowRanges}{Genomic ranges for each gene}
+#'   \item{colData}{Data frame with sample metadata}
+#'   \item{design}{Formula representing the experimental design}
+#'   \item{dispersions}{Estimated dispersion values}
+#'   \item{results}{Data frame with differential expression results}
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"midgut"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions a1-3 replicate 1
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891601"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions a1-3 replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891602"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions a1-3 replicate 3
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891603"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions CuLFCFe replicate 1
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891604"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions CuLFCFe replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891605"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions CuLFCFe replicate 3
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891606"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions p1-4 replicate 1
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891607"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions p1-4 replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891608"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions p1-4 replicate 3
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891609"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions a1 replicate 1
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891610"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions a1 replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891611"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions a1 replicate 3
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891612"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions a2-3 replicate 1
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891613"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions a2-3 replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891614"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions a2-3 replicate 3
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891615"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions Cu replicate 1
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891616"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions Cu replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891617"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions Cu replicate 3
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891618"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions LFCFe replicate 1
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891619"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions LFCFe replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891620"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions LFCFe replicate 3
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891621"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions Fe replicate 1
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891622"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions Fe replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891623"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions Fe replicate 3
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891624"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions p1 replicate 1
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891625"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions p1 replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891626"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions p1 replicate 3
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891627"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions p2-4 replicate 1
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891628"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions p2-4 replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891629"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions p2-4 replicate 3
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891630"
