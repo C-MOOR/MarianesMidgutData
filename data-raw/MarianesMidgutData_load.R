@@ -2,7 +2,7 @@
 
 # load libraries
 library(tidyverse)
-library(DOSE)
+
 
 # Get a single file as a data.frame (readcounts) for use in student coding blocks.
 readCounts <- read.table( "data-raw/SRR891601.htseq" )
@@ -29,8 +29,6 @@ midgut_tsv <- read.table("data-raw/midgut.tsv", header=TRUE)
 # Make object for the cached DESeq results 
 midgut <- readRDS("data-raw/marianes_htseq_DESeq.rds")
 
-# Make object for cached clusterProfiler results (cached Dec 1 2021)
-a1_vs_p1_clusters <- readRDS("data-raw/a1_vs_p1_clusters.rds")
 
 ## Make an object for each of the htseq files
 
@@ -63,7 +61,6 @@ usethis::use_data(readCounts_a1, overwrite = TRUE)
 usethis::use_data(i, overwrite = TRUE)
 usethis::use_data(midgut_tsv, overwrite = TRUE)
 usethis::use_data(midgut, overwrite = TRUE)
-usethis::use_data(a1_vs_p1_clusters, overwrite = TRUE)
 usethis::use_data(SRR891601, overwrite = TRUE)
 usethis::use_data(SRR891602, overwrite = TRUE)
 usethis::use_data(SRR891603, overwrite = TRUE)
