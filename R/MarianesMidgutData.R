@@ -130,6 +130,7 @@
 #' @source \url{https://elifesciences.org/articles/00886}
 "midgut_tsv"
 
+
 #' Expression data for the midgut data
 #'
 #'  DESeq2 object for the midgut data
@@ -145,6 +146,31 @@
 #' }
 #' @source \url{https://elifesciences.org/articles/00886}
 "midgut"
+
+#' ClustrProfiler data for the midgut data
+#'
+#'  enrichResult object for midgut data cached Dec 1 2021
+#'
+#' @format A ClustrProfiler object containing results of KEGG ontology based over-representation test:
+#' \describe{
+#'   \item{organism}{dme - Drosophila melanogaster}
+#'   \item{ontology}{KEGG}
+#'   \item{keytype}{ncbi-geneid}
+#'   \item{gene}{A list of NCBI gene IDs}
+#'   \item{ID}{List of KEGG Drosophila melanogaster pathway IDs}
+#'   \item{Description}{List of names of associated KEGG pathways}
+#'   \item{Gene Ratio}{Ratio of input genes that are annotated in the associated term. Count of significant genes over total number in the category}
+#'   \item{BgRatio}{Ratio of all genes that are annotated in the associated term}
+#'   \item{pvalue}{p-value for test that determines the given biological functions or processes are over-represented or enriched}
+#'   \item{p.adjust}{The adjusted p-value. FDR is used by default}
+#'   \item{qvalue}{An alternative to FDR control for multiple testing}
+#'   \item{geneID}{List of NIH gene IDs}
+#'   \item{Count}{Count of significant genes in a given gene set}
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"a1_vs_p1_clusters"
+
+
 
 #' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
 #'

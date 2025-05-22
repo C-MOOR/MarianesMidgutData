@@ -6,7 +6,7 @@
 \alias{MarianesMidgutData-package}
 \title{MarianesMidgutData: Data Package for the sequence date of the Drosophila Midgut expression from Marianes et al. 2013}
 \description{
-What the package does (one paragraph).
+Loads the R objects for data associated with "Physiological and stem cell compartmentalization within the Drosophila midgut" by Marianes & Spradling (2013) (https://elifesciences.org/articles/00886)"
 }
 \author{
 \strong{Maintainer}: Javier Carpinteyro-Ponce \email{jcarpinteyro@carnegiescience.edu} (\href{https://orcid.org/0009-0005-2865-1475}{ORCID})
@@ -15,6 +15,7 @@ Authors:
 \itemize{
   \item Katie Cox \email{katherinecox@jhu.edu}
   \item Fred Tan \email{tan@carnegiescience.edu}
+  \item Sayumi York \email{syork@ndm.edu}
 }
 
 }
