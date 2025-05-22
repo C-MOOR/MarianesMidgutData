@@ -14,14 +14,18 @@ Authors@R:
       person(given = "Fred",
              family = "Tan",
              email = "tan@carnegiescience.edu",
+             role = c("aut")),
+      person(given = "Sayumi",
+             family = "York",
+             email = "syork@ndm.edu",
              role = c("aut")))
-Description: What the package does (one paragraph).
+Description: Loads the R objects for data associated with "Physiological and stem cell compartmentalization within the Drosophila midgut" by Marianes & Spradling (2013) (https://elifesciences.org/articles/00886)"
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Depends: 
-    R (>= 2.10)
+    R (>= 3.5)
 LazyData: true
 Imports: 
     tibble
