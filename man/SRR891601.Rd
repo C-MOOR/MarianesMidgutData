@@ -18,6 +18,6 @@ A data frame  with 17559 rows and 2 variables:
 SRR891601
 }
 \description{
-Sequence data the SRR891601 run of the subregions a1-3 replicate 1
+Sequence data the SRR891601 run of the subregions a1-3 replicate 2
 }
 \keyword{datasets}

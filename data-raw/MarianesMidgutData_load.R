@@ -97,7 +97,3 @@ usethis::use_data(SRR891628, overwrite = TRUE)
 usethis::use_data(SRR891629, overwrite = TRUE)
 usethis::use_data(SRR891630, overwrite = TRUE)
 
-## declare the needed packages for accessing the data
-usethis::use_package("DESeq2")
-usethis::use_package("DOSE")
-usethis::use_package("SummarizedExperiment")

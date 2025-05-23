@@ -153,22 +153,21 @@
 #' @format A DOSE object containing results of differential expression analysis:
 #' \describe{
 #'   \item{sample}{Sample name}
-#'   \item{filename}{File name}
-#'   \item{condition}{Condition} 
-#' }
-#' @source \url{https://elifesciences.org/articles/00886}
-"midgut_tsv"
-
-#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
-#'
-#'  Sequence data the SRR891601 run of the subregions a1-3 replicate 1
-#'
-#' @format A data frame  with 17559 rows and 2 variables:
-#' \describe{
-#'   \item{DOSE}{DOSE}
 #' }
 #' @source \url{https://elifesciences.org/articles/00886}
 "a1_vs_p1_clusters"
+
+#' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
+#'
+#'  Sequence data the SRR891601 run of the subregions a1-3 replicate 2
+#'
+#' @format A data frame  with 17559 rows and 2 variables:
+#' \describe{
+#'   \item{V1}{Flybase gene ID}
+#'   \item{V2}{Raw read counts} 
+#' }
+#' @source \url{https://elifesciences.org/articles/00886}
+"SRR891601"
 
 #' Sequence data for the dissected and sectioned gut regions of Drosophila melanogaster
 #'

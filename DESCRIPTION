@@ -24,7 +24,4 @@ Depends:
     R (>= 3.5)
 LazyData: true
 Imports: 
-    DESeq2,
-    DOSE,
-    SummarizedExperiment,
     tibble
