@@ -64,8 +64,15 @@ usethis::use_data(readCounts_Cu, overwrite = TRUE)
 usethis::use_data(readCounts_a1, overwrite = TRUE)
 usethis::use_data(i, overwrite = TRUE)
 usethis::use_data(midgut_tsv, overwrite = TRUE)
+
+suppressWarnings(suppressMessages(
 usethis::use_data(midgut, overwrite = TRUE)
+))
+
+suppressWarnings(suppressMessages(
 usethis::use_data(a1_vs_p1_clusters, overwrite = TRUE)
+))
+
 usethis::use_data(SRR891601, overwrite = TRUE)
 usethis::use_data(SRR891602, overwrite = TRUE)
 usethis::use_data(SRR891603, overwrite = TRUE)
