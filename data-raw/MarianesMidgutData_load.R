@@ -29,6 +29,9 @@ midgut_tsv <- read.table("data-raw/midgut.tsv", header=TRUE)
 # Make object for the cached DESeq results 
 midgut <- readRDS("data-raw/marianes_htseq_DESeq.rds")
 
+# Create a1_vs_p1_clusters object
+a1_vs_p1_clusters <- readRDS("data-raw/a1_vs_p1_clusters.rds")
+
 
 ## Make an object for each of the htseq files
 
@@ -53,6 +56,7 @@ for (file_path in htseq_files) {
   assign(file_name, data_subset, envir = .GlobalEnv)  
 }
 
+
 # Import cleaned data for each data set
 usethis::use_data(readCounts, overwrite = TRUE)
 usethis::use_data(a, overwrite = TRUE)
@@ -61,6 +65,7 @@ usethis::use_data(readCounts_a1, overwrite = TRUE)
 usethis::use_data(i, overwrite = TRUE)
 usethis::use_data(midgut_tsv, overwrite = TRUE)
 usethis::use_data(midgut, overwrite = TRUE)
+usethis::use_data(a1_vs_p1_clusters, overwrite = TRUE)
 usethis::use_data(SRR891601, overwrite = TRUE)
 usethis::use_data(SRR891602, overwrite = TRUE)
 usethis::use_data(SRR891603, overwrite = TRUE)
@@ -91,3 +96,8 @@ usethis::use_data(SRR891627, overwrite = TRUE)
 usethis::use_data(SRR891628, overwrite = TRUE)
 usethis::use_data(SRR891629, overwrite = TRUE)
 usethis::use_data(SRR891630, overwrite = TRUE)
+
+## declare the needed packages for accessing the data
+usethis::use_package("DESeq2")
+usethis::use_package("DOSE")
+usethis::use_package("SummarizedExperiment")
