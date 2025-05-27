@@ -2,7 +2,6 @@
 
 # load libraries
 library(tidyverse)
-library(DESeq2)
 library(DOSE)
 
 # Get a single file as a data.frame (readcounts) for use in student coding blocks.
@@ -95,7 +94,3 @@ usethis::use_data(SRR891627, overwrite = TRUE)
 usethis::use_data(SRR891628, overwrite = TRUE)
 usethis::use_data(SRR891629, overwrite = TRUE)
 usethis::use_data(SRR891630, overwrite = TRUE)
-
-usethis::use_package("DESeq2", type = "Depends") 
-usethis::use_package("DOSE", type = "Depends")
-
